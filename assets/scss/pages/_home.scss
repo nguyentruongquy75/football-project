@@ -1,0 +1,23 @@
+.main {
+  margin-left: $side-bar-width;
+  padding: 1.8rem;
+
+  .matches {
+    --col-num: 4;
+    --col-space: 1.2rem;
+
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--col-space);
+    }
+  }
+}
+
+.section {
+  &__title {
+    font-size: 1.8rem;
+    color: $color-text-heading;
+    margin-bottom: 1.2rem;
+  }
+}

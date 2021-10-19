@@ -1,0 +1,68 @@
+.competition-detail {
+  .competition-title {
+    display: flex;
+    align-items: center;
+    padding: 4.8rem 2.8rem;
+    border-radius: 3.2rem;
+    background: linear-gradient(to right, #005085, $color-blue);
+    .competition-heading {
+      font-size: 3.2rem;
+      color: $color-white;
+      font-weight: 500;
+    }
+
+    .competition-logo {
+      margin-left: 1.2rem;
+      width: 5rem;
+
+      img {
+        @include size(100%);
+        object-fit: cover;
+      }
+    }
+  }
+}
+
+.matches {
+  &--current-week,
+  &--next-week {
+    margin-top: 2.8rem;
+    .matches__list {
+      flex-wrap: nowrap;
+    }
+  }
+}
+
+.competition-info {
+  --col-num: 3;
+  --col-space: 1.8rem;
+  margin-top: 2.8rem;
+  display: flex;
+  gap: var(--col-space);
+
+  &__item {
+    flex: calc(
+        (100% - calc(var(--col-num) - 1) * var(--col-space)) / var(--col-num)
+      )
+      0 0;
+    padding: 1.4rem;
+    background-color: $color-grey;
+    border-radius: 0.8rem;
+    &-head {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 1.8rem;
+
+      .heading {
+        font-size: 1.8rem;
+        color: $color-text-heading;
+      }
+
+      .expand {
+        font-size: 1.4rem;
+        color: $color-blue-light;
+        cursor: pointer;
+      }
+    }
+  }
+}

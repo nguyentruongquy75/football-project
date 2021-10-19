@@ -1,0 +1,25 @@
+.standing-table {
+  background-color: $color-white;
+  border-radius: 0.8rem;
+
+  border-collapse: collapse;
+
+  th,
+  td {
+    height: 3.8rem;
+    text-align: center;
+    font-size: 1.1rem;
+    color: #111;
+    border-bottom: 1px solid $color-grey;
+    width: 5rem;
+  }
+
+  th {
+    text-transform: uppercase;
+  }
+
+  .team {
+    min-width: 14rem;
+    text-align: left;
+  }
+}

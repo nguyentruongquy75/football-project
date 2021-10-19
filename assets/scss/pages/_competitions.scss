@@ -1,0 +1,41 @@
+.competitions {
+  --col-num: 4;
+  --col-space: 1.2rem;
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--col-space);
+  }
+
+  &__item {
+    padding: 1.2rem;
+    flex: calc(
+        (100% - calc(var(--col-num) - 1) * var(--col-space)) / var(--col-num)
+      )
+      0 0;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 6px 12px;
+    border-radius: 0.8rem;
+    cursor: pointer;
+    text-align: center;
+    transition: transform 0.2s ease-out;
+
+    &:hover {
+      transform: translateY(-2px);
+    }
+
+    &-name {
+      font-size: 1.8rem;
+      color: $color-text-heading;
+      margin-bottom: 1.2rem;
+    }
+
+    &-logo {
+      width: 60%;
+      margin: 0 auto;
+      img {
+        @include size(100%);
+        object-fit: cover;
+      }
+    }
+  }
+}
