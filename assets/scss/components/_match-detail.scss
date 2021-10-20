@@ -11,6 +11,10 @@
   background-color: $color-grey;
   display: none;
 
+  @include res(landscapePhone) {
+    width: 85vw;
+  }
+
   &-score {
     text-align: center;
 

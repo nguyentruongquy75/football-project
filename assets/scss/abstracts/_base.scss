@@ -6,6 +6,20 @@
 
 html {
   font-size: 62.5%;
+  -webkit-tap-highlight-color: transparent;
+
+  @include res(tablet) {
+    font-size: 56.25%;
+  }
+}
+
+:root {
+  --side-bar-width: 12rem;
+
+  @include res(landscapePhone) {
+    --side-bar-width: 0;
+    --side-bar-height: 7rem;
+  }
 }
 
 body {

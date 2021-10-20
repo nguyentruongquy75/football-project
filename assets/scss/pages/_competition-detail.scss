@@ -27,8 +27,45 @@
   &--current-week,
   &--next-week {
     margin-top: 2.8rem;
+
+    .matches__title {
+      display: flex;
+
+      .slider-control {
+        margin-left: auto;
+        display: flex;
+        align-items: center;
+        font-size: 2rem;
+
+        @include res(landscapePhone) {
+          display: none;
+        }
+
+        &__item {
+          padding: 0.6rem 1.2rem;
+          cursor: pointer;
+
+          &--disabled {
+            color: $color-grey;
+            cursor: default;
+          }
+        }
+      }
+    }
+
     .matches__list {
       flex-wrap: nowrap;
+
+      @include res(landscapePhone) {
+        overflow-x: scroll;
+        scroll-snap-type: x mandatory;
+      }
+
+      .matches__item {
+        @include res(landscapePhone) {
+          scroll-snap-align: start;
+        }
+      }
     }
   }
 }
@@ -38,7 +75,16 @@
   --col-space: 1.8rem;
   margin-top: 2.8rem;
   display: flex;
+  flex-wrap: wrap;
   gap: var(--col-space);
+
+  @include res(tablet) {
+    --col-num: 2;
+  }
+
+  @include res(tablet) {
+    --col-num: 1;
+  }
 
   &__item {
     flex: calc(

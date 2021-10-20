@@ -1,10 +1,26 @@
 .main {
-  margin-left: $side-bar-width;
+  margin-left: var(--side-bar-width);
   padding: 1.8rem;
+
+  @include res(landscapePhone) {
+    padding-bottom: var(--side-bar-height);
+  }
 
   .matches {
     --col-num: 4;
     --col-space: 1.2rem;
+
+    @include res(tablet) {
+      --col-num: 3;
+    }
+
+    @include res(landscapePhone) {
+      --col-num: 2;
+    }
+
+    @include res(portraitPhone) {
+      --col-num: 1;
+    }
 
     &__list {
       display: flex;

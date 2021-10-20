@@ -3,21 +3,41 @@
   top: 0;
   bottom: 0;
   left: 0;
-  width: $side-bar-width;
+  width: var(--side-bar-width);
   background-color: $color-blue;
   color: #506480;
   display: flex;
   flex-direction: column;
+
+  @include res(landscapePhone) {
+    top: initial;
+    right: 0;
+    width: unset;
+    height: var(--side-bar-height);
+    flex-direction: row;
+    justify-content: center;
+  }
 
   .logo {
     font-size: 6rem;
     padding-top: 2rem;
     color: $color-white;
     text-align: center;
+
+    @include res(landscapePhone) {
+      display: none;
+    }
   }
 
   .navigation {
     margin: auto 0;
+
+    &__list {
+      @include res(landscapePhone) {
+        display: flex;
+        align-items: center;
+      }
+    }
 
     &__item {
       width: fit-content;
@@ -25,6 +45,11 @@
 
       & + .navigation__item {
         margin-top: 1.2rem;
+
+        @include res(landscapePhone) {
+          margin-top: 0;
+          margin-left: 1.6rem;
+        }
       }
 
       &-link {

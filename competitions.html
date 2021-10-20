@@ -10,6 +10,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
     />
     <link rel="stylesheet" href="./assets/css/main.min.css" />
+    <script type="module" defer src="./assets/js/controller.js"></script>
   </head>
   <body>
     <main class="main">
@@ -21,13 +22,16 @@
         <nav class="navigation">
           <ul class="navigation__list">
             <li class="navigation__item">
-              <a href="#" class="navigation__item-link">
+              <a href="index.html" class="navigation__item-link">
                 <i class="fas fa-home"></i>
               </a>
             </li>
 
             <li class="navigation__item">
-              <a href="#" class="navigation__item-link">
+              <a
+                href="competitions.html"
+                class="navigation__item-link navigation__item-link--active"
+              >
                 <i class="fas fa-list-ol"></i>
               </a>
             </li>
@@ -45,17 +49,54 @@
         <h5 class="competitions__title section__title">Competitions</h5>
         <div class="competitions__list">
           <div class="competitions__item">
-            <h6 class="competitions__item-name">La Liga</h6>
-            <div class="competitions__item-logo">
-              <img
-                src="https://upload.wikimedia.org/wikipedia/en/b/bf/UEFA_Champions_League_logo_2.svg"
-                alt="Logo"
-              />
-            </div>
+            <a href="competition-detail.html" class="competitions__item-link">
+              <h6 class="competitions__item-name">La Liga</h6>
+              <div class="competitions__item-logo">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/en/b/bf/UEFA_Champions_League_logo_2.svg"
+                  alt="Logo"
+                />
+              </div>
+            </a>
+          </div>
+
+          <div class="competitions__item">
+            <a href="competition-detail.html" class="competitions__item-link">
+              <h6 class="competitions__item-name">La Liga</h6>
+              <div class="competitions__item-logo">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/en/b/bf/UEFA_Champions_League_logo_2.svg"
+                  alt="Logo"
+                />
+              </div>
+            </a>
+          </div>
+
+          <div class="competitions__item">
+            <a href="competition-detail.html" class="competitions__item-link">
+              <h6 class="competitions__item-name">La Liga</h6>
+              <div class="competitions__item-logo">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/en/b/bf/UEFA_Champions_League_logo_2.svg"
+                  alt="Logo"
+                />
+              </div>
+            </a>
+          </div>
+
+          <div class="competitions__item">
+            <a href="competition-detail.html" class="competitions__item-link">
+              <h6 class="competitions__item-name">La Liga</h6>
+              <div class="competitions__item-logo">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/en/b/bf/UEFA_Champions_League_logo_2.svg"
+                  alt="Logo"
+                />
+              </div>
+            </a>
           </div>
         </div>
       </section>
     </main>
-    <script src="./app.js"></script>
   </body>
 </html>

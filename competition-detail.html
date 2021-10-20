@@ -10,6 +10,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
     />
     <link rel="stylesheet" href="./assets/css/main.min.css" />
+    <script type="module" defer src="./assets/js/controller.js"></script>
   </head>
   <body>
     <main class="main">
@@ -21,13 +22,16 @@
         <nav class="navigation">
           <ul class="navigation__list">
             <li class="navigation__item">
-              <a href="#" class="navigation__item-link">
+              <a href="index.html" class="navigation__item-link">
                 <i class="fas fa-home"></i>
               </a>
             </li>
 
             <li class="navigation__item">
-              <a href="#" class="navigation__item-link">
+              <a
+                href="competitions.html"
+                class="navigation__item-link navigation__item-link--active"
+              >
                 <i class="fas fa-list-ol"></i>
               </a>
             </li>
@@ -52,7 +56,18 @@
       </section>
 
       <section class="matches matches--current-week">
-        <h5 class="matches__title section__title">Current week</h5>
+        <h5 class="matches__title section__title">
+          Current week
+          <div class="slider-control">
+            <div class="slider-control__item slider-control__prev">
+              <i class="fas fa-angle-left"></i>
+            </div>
+
+            <div class="slider-control__item slider-control__next">
+              <i class="fas fa-angle-right"></i>
+            </div>
+          </div>
+        </h5>
         <div class="matches__list">
           <div class="matches__item">
             <div class="matches__item-head">
@@ -337,7 +352,18 @@
       </section>
 
       <section class="matches matches--next-week">
-        <h5 class="matches__title section__title">Next week</h5>
+        <h5 class="matches__title section__title">
+          Next week
+          <div class="slider-control">
+            <div class="slider-control__item slider-control__prev">
+              <i class="fas fa-angle-left"></i>
+            </div>
+
+            <div class="slider-control__item slider-control__next">
+              <i class="fas fa-angle-right"></i>
+            </div>
+          </div>
+        </h5>
         <div class="matches__list">
           <div class="matches__item">
             <div class="matches__item-head">
@@ -979,35 +1005,46 @@
       <div class="detail-close">
         <i class="fas fa-times"></i>
       </div>
-      <ul class="round-list">
-        <li class="round-item">
-          <a href="#" class="round-item-link">W 1</a>
-        </li>
+      <div class="round-list-container">
+        <div class="slider-control">
+          <div class="slider-control__item slider-control__prev">
+            <i class="fas fa-angle-left"></i>
+          </div>
 
-        <li class="round-item">
-          <a href="#" class="round-item-link">W 1</a>
-        </li>
+          <div class="slider-control__item slider-control__next">
+            <i class="fas fa-angle-right"></i>
+          </div>
+        </div>
+        <ul class="round-list">
+          <li class="round-item">
+            <a href="#" class="round-item-link">W1</a>
+          </li>
 
-        <li class="round-item">
-          <a href="#" class="round-item-link">W 1</a>
-        </li>
+          <li class="round-item">
+            <a href="#" class="round-item-link">W1</a>
+          </li>
 
-        <li class="round-item">
-          <a href="#" class="round-item-link">W 1</a>
-        </li>
-        <li class="round-item">
-          <a href="#" class="round-item-link">W 1</a>
-        </li>
-        <li class="round-item">
-          <a href="#" class="round-item-link">W 1</a>
-        </li>
-        <li class="round-item">
-          <a href="#" class="round-item-link">W 1</a>
-        </li>
-        <li class="round-item">
-          <a href="#" class="round-item-link">W 1</a>
-        </li>
-      </ul>
+          <li class="round-item">
+            <a href="#" class="round-item-link">W1</a>
+          </li>
+
+          <li class="round-item">
+            <a href="#" class="round-item-link">W1</a>
+          </li>
+          <li class="round-item">
+            <a href="#" class="round-item-link">W1</a>
+          </li>
+          <li class="round-item">
+            <a href="#" class="round-item-link">W1</a>
+          </li>
+          <li class="round-item">
+            <a href="#" class="round-item-link">W1</a>
+          </li>
+          <li class="round-item">
+            <a href="#" class="round-item-link">W1</a>
+          </li>
+        </ul>
+      </div>
       <h5 class="competition__result-heading">Week 8</h5>
       <div class="result__list">
         <div class="result__item">

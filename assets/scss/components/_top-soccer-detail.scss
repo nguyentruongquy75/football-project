@@ -12,6 +12,10 @@
   overflow-y: scroll;
   display: none;
 
+  @include res(landscapePhone) {
+    width: 85vw;
+  }
+
   &::-webkit-scrollbar {
     width: 0.6rem;
     height: 80%;

@@ -4,6 +4,7 @@
       (100% - calc(var(--col-num) - 1) * var(--col-space)) / var(--col-num)
     )
     0 0;
+
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   border-radius: 0.8rem;
   cursor: pointer;
@@ -53,6 +54,12 @@
         @include size(100%);
         object-fit: cover;
       }
+    }
+
+    &__name {
+      display: inline-block;
+      font-size: 1.2rem;
+      margin-top: 0.2rem;
     }
   }
 }
