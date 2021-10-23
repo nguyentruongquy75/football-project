@@ -1,10 +1,10 @@
 const baseUrl = "http://api.football-data.org/v2/";
 
 const todayMatchesUrl =
-  "http://api.football-data.org/v2/matches?competitions=2001,2015,2002,2019,2021";
-const teamUrl = "http://api.football-data.org/v2/competitions/2001/teams/";
+  "https://api.football-data.org/v2/matches?competitions=2001,2015,2002,2019,2021";
+const teamUrl = "https://api.football-data.org/v2/competitions/2001/teams/";
 const competitionsUrl =
-  "http://api.football-data.org/v2/competitions?areas=2077";
+  "https://api.football-data.org/v2/competitions?areas=2077";
 
 const token1 = {
   headers: {
@@ -19,7 +19,7 @@ const token2 = {
 };
 
 const matchOfCompetition = (competitionId, matchDay) => {
-  return `http://api.football-data.org/v2/competitions/${competitionId}/matches${
+  return `https://api.football-data.org/v2/competitions/${competitionId}/matches${
     matchDay ? "?matchDay=" + matchDay : ""
   }`;
 };
