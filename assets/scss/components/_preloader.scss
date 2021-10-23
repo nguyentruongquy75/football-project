@@ -1,0 +1,43 @@
+.preloader {
+  $blue: #4285f4;
+  $red: #db4437;
+  $yellow: #f4b400;
+  $green: #0f9d58;
+  $colors-list: $blue $red $yellow $green;
+
+  &-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    justify-content: center;
+    align-items: center;
+    background-color: $color-white;
+    display: none;
+  }
+
+  span {
+    display: inline-block;
+    @include size(2rem);
+    border-radius: 50%;
+
+    &:not(:first-child) {
+      margin-left: 1rem;
+    }
+
+    @each $color in $colors-list {
+      $i: index(
+        $list: $colors-list,
+        $value: $color,
+      );
+
+      $t: $i * -0.25;
+
+      &:nth-child(#{$i}) {
+        background-color: $color;
+        animation: move 1s ease-in-out (#{$t}s) infinite alternate;
+      }
+    }
+  }
+}

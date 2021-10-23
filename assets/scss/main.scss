@@ -3,21 +3,23 @@
 @import "./abstracts/mixins";
 @import "./abstracts/base";
 @import "./abstracts/variables";
+@import "./abstracts/animations";
 
 @import "./pages/home";
 @import "./pages/competitions";
 @import "./pages/competition-detail";
+@import "./pages/highlight";
 
 @import "./layout/sidebar";
 @import "./components/match-item";
 @import "./components/tag";
-@import "./components/top-scorer-item";
 @import "./components/result-item";
 @import "./components/standing-table";
 @import "./components/overlay";
-@import "./components/top-soccer-detail";
 @import "./components/match-item";
 @import "./components/result-detail";
 @import "./components/standing-detail";
 @import "./components/detail-close";
 @import "./components/match-detail";
+@import "./components/message";
+@import "./components/preloader";

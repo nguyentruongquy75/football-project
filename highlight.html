@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Football</title>
+    <title>Highlight</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
@@ -27,28 +27,24 @@
           </li>
 
           <li class="navigation__item">
-            <a
-              href="competitions.html"
-              class="navigation__item-link navigation__item-link--active"
-            >
+            <a href="competitions.html" class="navigation__item-link">
               <i class="fas fa-list-ol"></i>
             </a>
           </li>
 
           <li class="navigation__item">
-            <a href="highlight.html" class="navigation__item-link">
+            <a
+              href="highlight.html"
+              class="navigation__item-link navigation__item-link--active"
+            >
               <i class="fas fa-video"></i>
             </a>
           </li>
         </ul>
       </nav>
     </aside>
-    <main class="main">
-      <section class="competitions">
-        <h5 class="competitions__title section__title">Competitions</h5>
-        <div class="competitions__list"></div>
-      </section>
 
+    <main class="main">
       <div class="preloader-container">
         <div class="preloader">
           <span></span>
@@ -57,8 +53,18 @@
           <span></span>
         </div>
       </div>
-    </main>
+      <section class="highlight">
+        <h5 class="highlight__title section__title">Highlight</h5>
+        <div class="highlight__list"></div>
+      </section>
 
-    <a href="competition-detail.html" hidden></a>
+      <div class="video-popup">
+        <div class="close">
+          <i class="fas fa-times"></i>
+        </div>
+        <iframe allow="autoplay" allowfullscreen></iframe>
+      </div>
+    </main>
+    <div class="overlay">&nbsp;</div>
   </body>
 </html>

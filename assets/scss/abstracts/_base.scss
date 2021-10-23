@@ -25,6 +25,18 @@ html {
 body {
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
+
+  &.disabled-scroll {
+    overflow: hidden;
+  }
+
+  &.preloader {
+    position: relative;
+    height: 100vh;
+    .preloader-container {
+      display: flex;
+    }
+  }
 }
 
 ul {
@@ -34,4 +46,12 @@ ul {
 a {
   text-decoration: none;
   color: inherit;
+}
+
+.display {
+  display: block !important;
+}
+
+.flex {
+  display: flex !important;
 }

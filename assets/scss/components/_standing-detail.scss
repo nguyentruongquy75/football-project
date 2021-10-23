@@ -9,7 +9,7 @@
   border-radius: 1.2rem;
   background-color: $color-grey;
   overflow-y: scroll;
-  // display: none;
+  display: none;
 
   @include res(landscapePhone) {
     width: 90vw;

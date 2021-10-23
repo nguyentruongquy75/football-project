@@ -3,8 +3,18 @@
   font-size: 1rem;
   border-radius: 1.2rem;
 
-  &--red {
+  &--LIVE {
     background-color: $color-red;
+    color: $color-white;
+  }
+
+  &--SCHEDULED {
+    background-color: rgb(30, 192, 30);
+    color: $color-white;
+  }
+
+  &--FINISHED {
+    background-color: rgb(30, 64, 218);
     color: $color-white;
   }
 }

@@ -12,323 +12,133 @@
     <link rel="stylesheet" href="./assets/css/main.min.css" />
     <script type="module" defer src="./assets/js/controller.js"></script>
   </head>
-  <body>
+  <body class="preloader">
+    <aside class="side-bar">
+      <div class="logo">
+        <i class="far fa-futbol"></i>
+      </div>
+
+      <nav class="navigation">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a
+              href="index.html"
+              class="navigation__item-link navigation__item-link--active"
+            >
+              <i class="fas fa-home"></i>
+            </a>
+          </li>
+
+          <li class="navigation__item">
+            <a href="competitions.html" class="navigation__item-link">
+              <i class="fas fa-list-ol"></i>
+            </a>
+          </li>
+
+          <li class="navigation__item">
+            <a href="highlight.html" class="navigation__item-link">
+              <i class="fas fa-video"></i>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </aside>
     <main class="main">
-      <aside class="side-bar">
-        <div class="logo">
-          <i class="far fa-futbol"></i>
-        </div>
-
-        <nav class="navigation">
-          <ul class="navigation__list">
-            <li class="navigation__item">
-              <a
-                href="index.html"
-                class="navigation__item-link navigation__item-link--active"
-              >
-                <i class="fas fa-home"></i>
-              </a>
-            </li>
-
-            <li class="navigation__item">
-              <a href="competitions.html" class="navigation__item-link">
-                <i class="fas fa-list-ol"></i>
-              </a>
-            </li>
-
-            <li class="navigation__item">
-              <a href="#" class="navigation__item-link">
-                <i class="fas fa-video"></i>
-              </a>
-            </li>
-          </ul>
-        </nav>
-      </aside>
-
       <section class="matches">
         <h5 class="matches__title section__title">Match of day</h5>
-        <div class="matches__list">
-          <div class="matches__item">
-            <div class="matches__item-head">
-              <h6 class="matches__item-competition">UFC Champions League</h6>
-              <div class="tag tag--red matches__item-status">Live</div>
-            </div>
-            <div class="matches__item-body">
-              <div class="home-team matches__item-team">
-                <div class="matches__item-team__logo">
-                  <img
-                    src="https://crests.football-data.org/57.svg"
-                    alt="Logo"
-                  />
-                </div>
+        <div class="matches__list"></div>
+      </section>
+      <div class="preloader-container">
+        <div class="preloader">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </main>
 
-                <span class="matches__item-team__name">Arsenal</span>
-              </div>
-
-              <div class="time">
-                <span class="matches__item-date">17/10/2021</span>
-                <span class="matches__item-time">21:00</span>
-              </div>
-
-              <div class="away-team matches__item-team">
-                <div class="matches__item-team__logo">
-                  <img
-                    src="https://crests.football-data.org/61.svg"
-                    alt="Logo"
-                  />
-                </div>
-
-                <span class="matches__item-team__name">Chelsea FC</span>
-              </div>
-            </div>
+    <div class="match-detail">
+      <div class="detail-close">
+        <i class="fas fa-times"></i>
+      </div>
+      <div class="matches__item-head">
+        <h6 class="matches__item-competition">UFC Champions League</h6>
+        <div class="tag tag--red matches__item-status">Live</div>
+      </div>
+      <div class="matches__item-body">
+        <div class="detail-close">
+          <i class="fas fa-times"></i>
+        </div>
+        <div class="home-team matches__item-team">
+          <div class="matches__item-team__logo">
+            <img src="https://crests.football-data.org/57.svg" alt="Logo" />
           </div>
 
-          <div class="matches__item">
-            <div class="matches__item-head">
-              <h6 class="matches__item-competition">UFC Champions League</h6>
-              <div class="tag tag--red matches__item-status">Live</div>
-            </div>
-            <div class="matches__item-body">
-              <div class="home-team matches__item-team">
-                <div class="matches__item-team__logo">
-                  <img
-                    src="https://crests.football-data.org/57.svg"
-                    alt="Logo"
-                  />
-                </div>
+          <span class="matches__item-team__name">Arsenal</span>
+        </div>
 
-                <span class="matches__item-team__name">Arsenal</span>
-              </div>
+        <div class="match-detail-score">
+          <div class="score">
+            <span class="home-score">1</span>
+            <span class="div">-</span>
+            <span class="away-score">1</span>
+          </div>
+          <div class="status">FT</div>
+        </div>
 
-              <div class="time">
-                <span class="matches__item-date">17/10/2021</span>
-                <span class="matches__item-time">21:00</span>
-              </div>
-
-              <div class="away-team matches__item-team">
-                <div class="matches__item-team__logo">
-                  <img
-                    src="https://crests.football-data.org/61.svg"
-                    alt="Logo"
-                  />
-                </div>
-
-                <span class="matches__item-team__name">Chelsea FC</span>
-              </div>
-            </div>
+        <div class="away-team matches__item-team">
+          <div class="matches__item-team__logo">
+            <img src="https://crests.football-data.org/61.svg" alt="Logo" />
           </div>
 
-          <div class="matches__item">
-            <div class="matches__item-head">
-              <h6 class="matches__item-competition">UFC Champions League</h6>
-              <div class="tag tag--red matches__item-status">Live</div>
-            </div>
-            <div class="matches__item-body">
-              <div class="home-team matches__item-team">
-                <div class="matches__item-team__logo">
-                  <img
-                    src="https://crests.football-data.org/57.svg"
-                    alt="Logo"
-                  />
-                </div>
+          <span class="matches__item-team__name">Chelsea FC</span>
+        </div>
+      </div>
 
-                <span class="matches__item-team__name">Arsenal</span>
-              </div>
-
-              <div class="time">
-                <span class="matches__item-date">17/10/2021</span>
-                <span class="matches__item-time">21:00</span>
-              </div>
-
-              <div class="away-team matches__item-team">
-                <div class="matches__item-team__logo">
-                  <img
-                    src="https://crests.football-data.org/61.svg"
-                    alt="Logo"
-                  />
-                </div>
-
-                <span class="matches__item-team__name">Chelsea FC</span>
-              </div>
-            </div>
+      <div class="match-info">
+        <h5 class="match-info__heading">Match info</h5>
+        <div class="match-info__item match-info__item-date">
+          <div class="match-info__item-icon">
+            <img
+              src="https://www.livescore.com/ls-web-assets/svgs/common/calendar-2d54b39c3ed681b02d683b0bebe9038f.svg"
+              alt="Icon"
+            />
           </div>
-
-          <div class="matches__item">
-            <div class="matches__item-head">
-              <h6 class="matches__item-competition">UFC Champions League</h6>
-              <div class="tag tag--red matches__item-status">Live</div>
-            </div>
-            <div class="matches__item-body">
-              <div class="home-team matches__item-team">
-                <div class="matches__item-team__logo">
-                  <img
-                    src="https://crests.football-data.org/57.svg"
-                    alt="Logo"
-                  />
-                </div>
-
-                <span class="matches__item-team__name">Arsenal</span>
-              </div>
-
-              <div class="time">
-                <span class="matches__item-date">17/10/2021</span>
-                <span class="matches__item-time">21:00</span>
-              </div>
-
-              <div class="away-team matches__item-team">
-                <div class="matches__item-team__logo">
-                  <img
-                    src="https://crests.football-data.org/61.svg"
-                    alt="Logo"
-                  />
-                </div>
-
-                <span class="matches__item-team__name">Chelsea FC</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="matches__item">
-            <div class="matches__item-head">
-              <h6 class="matches__item-competition">UFC Champions League</h6>
-              <div class="tag tag--red matches__item-status">Live</div>
-            </div>
-            <div class="matches__item-body">
-              <div class="home-team matches__item-team">
-                <div class="matches__item-team__logo">
-                  <img
-                    src="https://crests.football-data.org/57.svg"
-                    alt="Logo"
-                  />
-                </div>
-
-                <span class="matches__item-team__name">Arsenal</span>
-              </div>
-
-              <div class="time">
-                <span class="matches__item-date">17/10/2021</span>
-                <span class="matches__item-time">21:00</span>
-              </div>
-
-              <div class="away-team matches__item-team">
-                <div class="matches__item-team__logo">
-                  <img
-                    src="https://crests.football-data.org/61.svg"
-                    alt="Logo"
-                  />
-                </div>
-
-                <span class="matches__item-team__name">Chelsea FC</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="matches__item">
-            <div class="matches__item-head">
-              <h6 class="matches__item-competition">UFC Champions League</h6>
-              <div class="tag tag--red matches__item-status">Live</div>
-            </div>
-            <div class="matches__item-body">
-              <div class="home-team matches__item-team">
-                <div class="matches__item-team__logo">
-                  <img
-                    src="https://crests.football-data.org/57.svg"
-                    alt="Logo"
-                  />
-                </div>
-
-                <span class="matches__item-team__name">Arsenal</span>
-              </div>
-
-              <div class="time">
-                <span class="matches__item-date">17/10/2021</span>
-                <span class="matches__item-time">21:00</span>
-              </div>
-
-              <div class="away-team matches__item-team">
-                <div class="matches__item-team__logo">
-                  <img
-                    src="https://crests.football-data.org/61.svg"
-                    alt="Logo"
-                  />
-                </div>
-
-                <span class="matches__item-team__name">Chelsea FC</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="matches__item">
-            <div class="matches__item-head">
-              <h6 class="matches__item-competition">UFC Champions League</h6>
-              <div class="tag tag--red matches__item-status">Live</div>
-            </div>
-            <div class="matches__item-body">
-              <div class="home-team matches__item-team">
-                <div class="matches__item-team__logo">
-                  <img
-                    src="https://crests.football-data.org/57.svg"
-                    alt="Logo"
-                  />
-                </div>
-
-                <span class="matches__item-team__name">Arsenal</span>
-              </div>
-
-              <div class="time">
-                <span class="matches__item-date">17/10/2021</span>
-                <span class="matches__item-time">21:00</span>
-              </div>
-
-              <div class="away-team matches__item-team">
-                <div class="matches__item-team__logo">
-                  <img
-                    src="https://crests.football-data.org/61.svg"
-                    alt="Logo"
-                  />
-                </div>
-
-                <span class="matches__item-team__name">Chelsea FC</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="matches__item">
-            <div class="matches__item-head">
-              <h6 class="matches__item-competition">UFC Champions League</h6>
-              <div class="tag tag--red matches__item-status">Live</div>
-            </div>
-            <div class="matches__item-body">
-              <div class="home-team matches__item-team">
-                <div class="matches__item-team__logo">
-                  <img
-                    src="https://crests.football-data.org/57.svg"
-                    alt="Logo"
-                  />
-                </div>
-
-                <span class="matches__item-team__name">Arsenal</span>
-              </div>
-
-              <div class="time">
-                <span class="matches__item-date">17/10/2021</span>
-                <span class="matches__item-time">21:00</span>
-              </div>
-
-              <div class="away-team matches__item-team">
-                <div class="matches__item-team__logo">
-                  <img
-                    src="https://crests.football-data.org/61.svg"
-                    alt="Logo"
-                  />
-                </div>
-
-                <span class="matches__item-team__name">Chelsea FC</span>
-              </div>
-            </div>
+          <div class="match-info__item-desc">
+            <span class="match-info__item-detail">19 October 2021</span>
+            <span class="match-info__item-title">Date</span>
           </div>
         </div>
-      </section>
-    </main>
+
+        <div class="match-info__item match-info__item-referee">
+          <div class="match-info__item-icon">
+            <img
+              src="https://www.livescore.com/ls-web-assets/svgs/common/referee-d0e056d51a19081940f87521c60a495b.svg"
+              alt="Icon"
+            />
+          </div>
+          <div class="match-info__item-desc">
+            <span class="match-info__item-detail">Mike Dean (England)</span>
+            <span class="match-info__item-title">Referee</span>
+          </div>
+        </div>
+
+        <div class="match-info__item match-info__item-venue">
+          <div class="match-info__item-icon">
+            <img
+              src="https://www.livescore.com/ls-web-assets/svgs/common/venue-bb6d741e46d7436e13f2cf6ce72436b8.svg"
+              alt="Icon"
+            />
+          </div>
+          <div class="match-info__item-desc">
+            <span class="match-info__item-detail">Emirates Stadium</span>
+            <span class="match-info__item-title">Venue</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="overlay">&nbsp;</div>
   </body>
 </html>

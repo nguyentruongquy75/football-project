@@ -71,22 +71,19 @@
 }
 
 .competition-info {
-  --col-num: 3;
+  --col-num: 2;
   --col-space: 1.8rem;
   margin-top: 2.8rem;
   display: flex;
   flex-wrap: wrap;
   gap: var(--col-space);
 
-  @include res(tablet) {
-    --col-num: 2;
-  }
-
-  @include res(tablet) {
+  @include res(landscapePhone) {
     --col-num: 1;
   }
 
   &__item {
+    position: relative;
     flex: calc(
         (100% - calc(var(--col-num) - 1) * var(--col-space)) / var(--col-num)
       )

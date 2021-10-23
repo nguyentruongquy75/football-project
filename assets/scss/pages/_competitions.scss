@@ -45,6 +45,7 @@
 
     &-logo {
       width: 60%;
+      height: 13rem;
       margin: 0 auto;
       img {
         @include size(100%);

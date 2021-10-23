@@ -1,0 +1,111 @@
+.main {
+  .highlight {
+    --col-num: 4;
+    --col-space: 1.2rem;
+
+    @include res(tablet) {
+      --col-num: 3;
+    }
+
+    @include res(landscapePhone) {
+      --col-num: 2;
+    }
+
+    @include res(portraitPhone) {
+      --col-num: 1;
+    }
+
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0 calc(var(--col-space) / -2);
+    }
+
+    &__item {
+      flex: calc(100% / var(--col-num)) 0 0;
+      padding: 0 calc(var(--col-space) / 2);
+      margin-bottom: 2rem;
+      cursor: pointer;
+
+      &-img {
+        position: relative;
+        height: 20rem;
+
+        img {
+          @include size(100%);
+          object-fit: cover;
+          border-radius: 1.2rem;
+        }
+
+        &-icon {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          font-size: 3.6rem;
+          color: $color-white;
+        }
+      }
+
+      &-title {
+        font-size: 1.6rem;
+        font-weight: 600;
+        color: $color-text-heading;
+        margin-top: 0.2rem;
+      }
+
+      &-desc {
+        display: flex;
+        align-items: center;
+        margin-top: 0.4rem;
+      }
+
+      &-competition {
+        font-size: 1.2rem;
+        color: $color-white;
+        background-color: $color-blue;
+        padding: 0.2rem 0.4rem;
+        border-radius: 0.4rem;
+      }
+
+      &-date {
+        font-size: 1.2rem;
+        color: $color-grey-secondary;
+        margin: 0 auto;
+      }
+    }
+  }
+
+  .video-popup {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba($color: #000000, $alpha: 0.7);
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+    .close {
+      position: absolute;
+      right: 2rem;
+      top: 2rem;
+      font-size: 3.6rem;
+      color: $color-white;
+      cursor: pointer;
+    }
+
+    iframe {
+      @include size(80%);
+      border-radius: 0.8rem;
+      border: none;
+
+      @include res(landscapePhone) {
+        width: 90%;
+        height: 50%;
+      }
+    }
+  }
+}

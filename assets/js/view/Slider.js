@@ -17,7 +17,7 @@ export class Slider {
     container.className = "slider";
     Object.assign(container.style, {
       padding: "0.4rem 0.4rem 1.2rem",
-      overflowX: "hidden",
+      overflow: "hidden",
     });
 
     Object.assign(cloneNode.style, {
@@ -29,12 +29,13 @@ export class Slider {
     container.append(cloneNode);
 
     // Calculate total Slide
+
     const itemOfSlide = Math.floor(
-      cloneNode.clientWidth / cloneNode.children[0].clientWidth
+      cloneNode.clientWidth / cloneNode.children[0]?.clientWidth
     );
 
     this.#space =
-      (cloneNode.clientWidth % cloneNode.children[0].clientWidth) /
+      (cloneNode.clientWidth % cloneNode.children[0]?.clientWidth) /
       (itemOfSlide - 1);
 
     this.#totalSlide = Math.ceil(cloneNode.childElementCount / itemOfSlide);
